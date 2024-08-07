@@ -1,0 +1,112 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/favorite_pageSPB"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_centerInParent="true"
+            android:clipChildren="true">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/favorite_imgfield"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/field"
+                app:riv_corner_radius="50dp" />
+
+            <RelativeLayout
+                android:layout_width="350dp"
+                android:layout_height="320dp"
+                android:layout_centerInParent="true">
+
+                <ImageButton
+                    android:id="@+id/favorite_icon_like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+
+                    android:background="@drawable/circle_ic_like"
+                    android:src="@drawable/love" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:id="@+id/favorite_itemName_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+
+                        android:text="Sân bóng UTE"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/favorite_itemType_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/favorite_itemName_field"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+
+                        android:text="Sân 7 người"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/favorite_itemDescribe_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/favorite_itemType_field"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Mô tả Sân bóng UTE"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14dp" />
+
+                    <per.wsj.library.AndRatingBar
+                        android:id="@+id/favorite_rating_bar"
+                        android:layout_width="100dp"
+                        android:layout_height="20dp"
+                        android:layout_below="@id/favorite_itemDescribe_field"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="1dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="3.4"
+                        android:stepSize="0.1"
+                        app:starColor="#ffc107"
+                        app:subStarColor="#2b2d30" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

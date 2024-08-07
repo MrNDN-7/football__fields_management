@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ThanhBinh.FormUpdateRoleActivity">
+
+    <LinearLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/changeInforBack"
+            android:layout_width="42dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/circle_shape"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/changeAvttxt"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Xin cấp quyền chủ sân"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/txtTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:text="Số điện thoại:"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <!-- Ô nhập liệu -->
+        <EditText
+            android:id="@+id/edtPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/txtTen"
+            android:background="@android:color/transparent"
+            android:gravity="end"
+            android:hint="SDT có liên kết momo"
+            android:inputType="text"
+            android:padding="10dp"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/txtDiaChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:text="Địa chỉ sân:"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <!-- Ô nhập liệu -->
+        <EditText
+            android:id="@+id/edtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/txtDiaChi"
+            android:background="@android:color/transparent"
+            android:gravity="end"
+            android:hint="Nhập địa chỉ sân hiện có"
+            android:inputType="text"
+            android:padding="10dp"
+            />
+
+    </RelativeLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tôi đồng ý với các điều khoản của ứng dụng" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+
+        android:layout_height="wrap_content"
+        android:text="Xác nhận" />
+
+
+</LinearLayout>

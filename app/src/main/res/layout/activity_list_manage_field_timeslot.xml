@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <ImageButton
+            android:id="@+id/btnBackTimeSlot"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_back"
+            android:background="@null" />
+
+
+        <TextView
+            android:id="@+id/text_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Quản lý sân"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/tvDateFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:background="@drawable/rounded_blue_light_background"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="Ngày: 7-4-2024"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnSelectDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:background="@drawable/rounded_blue_light_background"
+                android:text="Lọc theo ngày" />
+        </TableRow>
+    </TableLayout>
+
+<!--    <TableLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TableRow android:layout_height="52dp">-->
+
+<!--            <Spinner-->
+<!--                android:id="@+id/spnStatus"-->
+<!--                android:layout_width="264dp"-->
+<!--                android:layout_height="47dp"-->
+<!--                android:background="#90EE90" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnSelectStatus"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_horizontal"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="#90EE90"-->
+<!--                android:text="Lọc" />-->
+<!--        </TableRow>-->
+<!--    </TableLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_field_timeslot"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp" />
+
+    <Button
+        android:id="@+id/btnCreateTimeSlot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner"
+        android:text="Thêm khung giờ" />
+
+</LinearLayout>

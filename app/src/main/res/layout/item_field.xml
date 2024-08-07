@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/field"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/circle_shape"
+            android:scaleType="centerCrop"
+            android:src="@drawable/field" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon_like"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="top"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="20dp"
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_like" />
+
+        <TextView
+            android:id="@+id/itemName_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="70dp"
+            android:text="Sân bóng UTE"
+            android:textColor="#FFFFFF"
+
+
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/itemDescribe_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="120dp"
+            android:text=" Mô tả Sân bóng UTE"
+            android:textColor="#FFFFFF"
+
+            android:textSize="30dp" />
+
+<!--        <RatingBar-->
+<!--            android:id="@+id/rating_bar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginBottom="90dp"-->
+<!--            android:background="@drawable/rec_radius_shape"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:isIndicator="false"-->
+<!--            android:numStars="5"-->
+<!--            android:rating="3.7"-->
+<!--            android:outlineSpotShadowColor="#ffc107"-->
+<!--            android:stepSize="0.1" />-->
+
+        <per.wsj.library.AndRatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="90dp"
+            android:drawablePadding="10dp"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="3.4"
+            android:stepSize="0.1"
+            app:starDrawable="@drawable/star"
+            app:bgDrawable="@drawable/star"
+            app:starColor="#ffc107"
+            app:subStarColor="#2b2d30"
+            />
+
+<!--        link github: https://github.com/wdsqjq/AndRatingBar -->
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

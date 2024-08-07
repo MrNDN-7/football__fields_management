@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomHome"
+        android:title="Trang Chủ"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/bottomLike"
+        android:title="Yêu thích"
+        android:icon="@drawable/heart"/>
+<!--    <item-->
+<!--        android:id="@+id/bottomHistory"-->
+<!--        android:title="Lịch sử"-->
+<!--        android:icon="@drawable/history"/>-->
+    <item
+        android:id="@+id/bottomAccount"
+        android:title="Tài khoản"
+        android:icon="@drawable/user"/>
+</menu>

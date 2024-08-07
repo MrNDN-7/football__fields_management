@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:layout_margin ="8dp"
+    android:background="@drawable/rounded_gray_light_background">
+
+    <TextView
+        android:id="@+id/txtFieldName"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Tên Sân"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/btnUpdate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/map"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/txtDes"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFieldName"
+        android:layout_marginTop="5dp"
+        android:text="Mô tả sân"
+        android:textColor="#A0A0A0" />
+
+    <TextView
+        android:id="@+id/txtTypeField"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Loại"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/txtDes"/>
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_red_background"
+        android:text="Chỉnh sửa"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/txtDes"/>
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Giá thuê"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/btnUpdate"/>
+    <Button
+        android:id="@+id/btnManage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_blue_light_background"
+        android:layout_marginTop = "5dp"
+        android:text="Quản lý"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/btnUpdate"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnManage"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_blue_light_background">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/star"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@null" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtRate"
+            android:layout_marginLeft="10dp"
+            android:text="4.5"/>
+    </LinearLayout>
+</RelativeLayout>

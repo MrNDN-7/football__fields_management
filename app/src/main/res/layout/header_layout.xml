@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="50dp"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="top">
+
+            <ImageButton
+                android:src="@drawable/return_button"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/topName"
+                android:layout_width="0dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text="Top Name"
+                android:textColor="@color/black"
+
+                android:textSize="34dp" />
+
+            <ImageButton
+                android:id="@+id/messImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/circle_shape"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_chat" />
+
+
+            <ImageButton
+                android:id="@+id/avtImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/memekiet"
+                android:clipToOutline="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/memekiet" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

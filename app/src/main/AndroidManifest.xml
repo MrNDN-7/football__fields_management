@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE " />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BookSportField"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.ThanhBinh.ThongKeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DucNhan.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Kiet.LoaiSanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Kiet.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Kiet.DatSanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Kiet.SanItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Kiet.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Kiet.yeu_thich"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Kiet.ChiTietSan"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Kiet.LichSu"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TuanAnh.Activity_Update_Field"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TuanAnh.Activity_TimeSlot"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TuanAnh.Activity_Add_Field"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.TuanAnh.Activity_FieldManager"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThanhBinh.ItemSubmitUpdateRoleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThanhBinh.FieldItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThanhBinh.SubmitUpdateRoleOfAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThanhBinh.FormUpdateRoleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThanhBinh.ChangeInforActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThanhBinh.ChangeAvtActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThanhBinh.ChangePassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThanhBinh.seach_fields"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThanhBinh.Edit_field_infor"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThanhBinh.Edit_profile"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThanhBinh.MainActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Activity.DucNhan.LocationField"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DucNhan.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DucNhan.UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DucNhan.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.DucNhan.LoginActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.DucNhan.SignupActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".Activity.DucNhan.OwnerFieldActivity" -->
+        <!-- android:exported="false" /> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDa_n-9BcETF0m43m9b0lZM7xgWHsjff0A" />
+    </application>
+
+</manifest>

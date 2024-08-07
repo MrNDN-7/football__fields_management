@@ -1,0 +1,9 @@
+<!-- border_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/lightGrey"/> <!-- Màu nền -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/darkGrey"/>
+    <corners android:radius="16dp"/> <!-- Bo tròn góc -->
+</shape>

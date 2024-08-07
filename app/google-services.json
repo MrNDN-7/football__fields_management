@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "262985217556",
+    "firebase_url": "https://booksportfield-44840-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "booksportfield-44840",
+    "storage_bucket": "booksportfield-44840.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262985217556:android:14dd2f9d47279fcf255901",
+        "android_client_info": {
+          "package_name": "com.example.booksportfield"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjf-fc7ueaLtqWsO235Hre2I-ZGpjPzmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

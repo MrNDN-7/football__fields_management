@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#6CCCCF">
+        <ImageButton
+            android:id="@+id/imageButtonThoatThongBao"
+            android:layout_width="45sp"
+            android:layout_height="45sp"
+            android:src="@drawable/back"
+            android:scaleType="centerCrop"
+            android:backgroundTint="#6CCCCF"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông Báo"
+            android:textSize="30sp"
+            android:layout_marginLeft="100sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listViewThongBao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp" />
+</LinearLayout>

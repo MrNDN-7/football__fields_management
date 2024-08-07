@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_field_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Activity.ThanhBinh.Edit_profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ic_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/goback" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ic_check"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_check" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0c8ce9">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <!-- Hình ảnh -->
+
+            <ImageButton
+                android:id="@+id/add_vertical_rectangle"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="31dp"
+
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/add_around"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="1dp" />
+
+            <ImageButton
+                android:id="@+id/add_horizontal_rectangle"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/add_rec"
+
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="1dp" />
+
+            <!-- Text -->
+            <TextView
+                android:id="@+id/txt_edit_img_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_vertical_rectangle"
+
+                android:background="#2b2d30"
+                android:gravity="center"
+                android:text="Chạm để thay đổi"
+                android:textColor="#fef7ff"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/txtIDField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID Sân:"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_alignParentStart="true" />
+
+        <!-- Ô nhập liệu -->
+        <EditText
+            android:id="@+id/edtIDField"
+            android:layout_toEndOf="@id/txtIDField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Nhập id sân của bạn"
+            android:inputType="text"
+            android:gravity="end"
+            android:layout_marginStart="8dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:padding="10dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/txtTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Tên:"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_alignParentStart="true" />
+
+        <!-- Ô nhập liệu -->
+        <EditText
+            android:id="@+id/edtFieldName"
+            android:layout_toEndOf="@id/txtTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Nhập tên của bạn"
+            android:inputType="text"
+            android:gravity="end"
+            android:layout_marginStart="8dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:padding="10dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/txtFieldType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loại sân:"
+            android:layout_marginTop="5dp"
+
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_alignParentStart="true" />
+
+        <!-- Ô nhập liệu -->
+        <EditText
+            android:id="@+id/edtFieldType"
+            android:layout_toEndOf="@id/txtFieldType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Nhập loại sân của bạn"
+            android:inputType="text"
+            android:gravity="end"
+            android:layout_marginStart="8dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:padding="10dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/txtFieldPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá sân:"
+            android:layout_marginTop="5dp"
+
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_alignParentStart="true" />
+
+        <!-- Ô nhập liệu -->
+        <EditText
+            android:id="@+id/edtFieldPrice"
+            android:layout_toEndOf="@id/txtFieldPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Nhập giá sân của bạn"
+            android:inputType="text"
+            android:gravity="end"
+            android:layout_marginStart="8dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:padding="10dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ:"
+            android:layout_marginTop="5dp"
+
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_alignParentStart="true" />
+
+        <!-- Ô nhập liệu -->
+        <EditText
+            android:id="@+id/edtFieldAddress"
+            android:layout_toEndOf="@id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Nhập địa chỉ sân của bạn"
+            android:inputType="text"
+            android:gravity="end"
+            android:layout_marginStart="8dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:padding="10dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/txtDescribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mô tả:"
+            android:layout_marginTop="5dp"
+
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_alignParentStart="true" />
+
+        <!-- Ô nhập liệu -->
+        <EditText
+            android:id="@+id/edtDescribe"
+            android:layout_toEndOf="@id/txtDescribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Nhập mô tả sân của bạn"
+            android:inputType="text"
+            android:gravity="end"
+            android:layout_marginStart="8dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:padding="10dp">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:id="@+id/txtTimeFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khung giờ:"
+            android:layout_marginTop="5dp"
+
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_alignParentStart="true" />
+
+        <!-- Ô nhập liệu -->
+        <EditText
+            android:id="@+id/edtTimeFrame"
+            android:layout_toEndOf="@id/txtTimeFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Chọn khung giờ của bạn"
+            android:inputType="text"
+            android:gravity="end"
+            android:layout_marginStart="8dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

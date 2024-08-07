@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/blue"/> <!-- Màu nền -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/darkGrey"/>
+    <corners android:radius="30dp"/> <!-- Bo tròn góc -->
+</shape>
